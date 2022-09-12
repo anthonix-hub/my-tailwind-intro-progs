@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="/css/dist.css">-->
+    <link rel="stylesheet" href="/tailwind_tutorial/public/styles.css">
+    <title>index | netnooja ~ food</title>
+</head>
+<body class="text-gray-600">
+    <div class="grid md:grid-cols-6 "> <!--content wrapper-->
+        <div class=" md:flex md:col-span-1 md:justify-end md:bg-red-40">
+            <nav class="p-3 text-right md:fixed">
+                <div class="flex items-center justify-between ">
+                    <h1 class="p-4 uppercase transition duration-500 ease-in border-b border-gray-100 hover:border-blue-400">
+                        <a href="http://127.0.0.1:5500/dist/foodie/landing_page.html" class="">
+                            netnooja food
+                        </a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="hamburger">
+                        <img src="/tailwind_tutorial/img/icons/icons8_menu_50px.png" alt="" class="h-8">
+                    </div>
+                </div>
+                <div class="flex bg-gray-50 md:block ">
+                    <ul class="hidden mt-1 text-sm text-right sm:text-left md:block" id="menu">
+                        <div class="flex items-center md:block">
+                            <div class="">
+                                <li class="justify-end p-2 font-bold text-gray-700">
+                                    <a href="#" class="ml-3">
+                                        <span class="flex items-center gap-1 sm:justify-center">
+                                            <img src="/tailwind_tutorial/img/icons/icons8_home_24px_1.png" alt="" class="h-7 "> 
+                                            Home
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="">
+                                <li class="justify-end p-2 ml-3">
+                                    <a href="">
+                                        <span class="flex items-center gap-1 sm:justify-center">
+                                            <img src="/tailwind_tutorial/img/icons/icons8_info_24px.png " alt="" class="h-7 "> 
+                                            About
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="">
+                                <li class="justify-end p-2 ml-3">
+                                    <a href="" >
+                                        <span class="flex items-center gap-1 sm:justify-center">
+                                            <img src="/tailwind_tutorial/img/icons/icons8_contact_64px.png" alt="" class="h-7 "> 
+                                            contact
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="">
+                                <li class="justify-end p-2 ml-3">
+                                    <a href="" >
+                                        <span class="flex items-center gap-1 sm:justify-center">
+                                            <img src="/tailwind_tutorial/img/icons/icons8_contact_64px.png" alt="" class="h-7 "> 
+                                            Order_list
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div><!--end nav-->
+        <main class="px-10 py-6 bg-gray-100 sm:px-16 sm:col-span-1 lg:px-3 md:col-span-4 md:px-5">
+            <div class="flex items-center justify-between ">
+                <div class="flex justify-center md:justify-end">
+                    <a href="http://127.0.0.1:5500/dist/foodie/login.html" class="w-20 h-8 py-2 text-xs tracking-wider text-center text-red-700 uppercase transition duration-500 ease-in bg-white border-2 border-red-400 rounded-full shadow-lg cursor-pointer hover:bg-red-600 hover:text-white hover:shadow-lg">
+                        login
+                    </a> 
+                    <a href="#" class="w-20 h-8 py-2 ml-2 text-xs tracking-wider text-center text-red-700 uppercase transition duration-500 ease-in bg-white border-2 border-red-400 rounded-full shadow-lg cursor-pointer hover:bg-red-600 hover:text-white hover:shadow-lg">
+                        signup
+                    </a>
+                </div>
+                <header class="">
+                    <h2 class="text-4xl font-semibold text-gray-700 sm:text-6xl w-52">
+                        <a href="http://127.0.0.1:5500/dist/foodie/landing_page.html">
+                            Recipes
+                        </a>
+                    </h2>
+                    <h3 class="text-lg font-semibold sm:text-2xl">
+                        For netnooja foods
+                    </h3>
+                </header>
+            </div>
+            <div class="">
+                <h4 class="mt-12 font-bold border-b border-gray-200">
+                    Latest Recipes
+                </h4>
+                <div class="grid gap-3 mt-8 lg:grid-cols-4 md:grid-cols-2">
+                    <!--cards go here-->
+                    <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                        <img src="/tailwind_tutorial/img/foodiesfeed.com_fried-rice-with-shrimps.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                        <div class="p-4">
+                            <span class="font-bold">hot beans sauce</span>
+                            <span class="block text-sm text-gray-400">by mario</span>
+                        </div>
+                        <div>
+                            <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-center text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                25 mins
+                            </span>
+                        </div>
+                    </div>
+                    <!--cards go here-->
+                    <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                        <img src="/tailwind_tutorial/img/foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                        <div class="p-4">
+                            <span class="font-bold">hot beans sauce</span>
+                            <span class="block text-sm text-gray-400">by mario</span>
+                        </div>
+                        <div>
+                            <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                25 mins
+                            </span>
+                        </div>
+                    </div>
+                    <!--cards go here-->
+                    <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                        <img src="/tailwind_tutorial/img/pancakes-with-banana-and-roasted-oats.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                        <div class="p-4">
+                            <span class="font-bold">hot beans sauce</span>
+                            <span class="block text-sm text-gray-400">by mario</span>
+                        </div>
+                        <div>
+                            <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                25 mins
+                            </span>
+                        </div>
+                    </div>  
+                    <!--cards go here-->
+                    <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                        <img src="/tailwind_tutorial/img/sandwiches-with-a-ham.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                        <div class="p-4">
+                            <span class="font-bold">hot beans sauce</span>
+                            <span class="block text-sm text-gray-400">by mario</span>
+                        </div>
+                        <div>
+                            <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                25 mins
+                            </span>
+                        </div>
+                    </div>  
+                </div>
+
+                <h4 class="mt-12 font-bold border-b border-gray-200">
+                    Most liked recipies
+                </h4>
+                <div class="mt-8">
+                    <div class="grid gap-3 mt-8 lg:grid-cols-4 md:grid-cols-2">
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/pancakes-with-banana-and-roasted-oats.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-center text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/gren-curry-medium-duck-breast-with-vegetables-and-rice.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/2.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>  
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/chili-noodle-soup-with-fresh-vegetables-on-top.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <div class="grid gap-3 mt-8 lg:grid-cols-4 md:grid-cols-2">
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/pancakes-with-banana-and-roasted-oats.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-center text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/gren-curry-medium-duck-breast-with-vegetables-and-rice.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/2.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>  
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/chili-noodle-soup-with-fresh-vegetables-on-top.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <!-- -->
+                <div class="row-span-3 p-3 mt-5 bg-white">
+                    <div class="block text-justify md:flex ">
+                        <span class="h-48 sm:h-1/6 ">
+                            <img src="/tailwind_tutorial/img/sandwiches-with-a-ham.jpg" alt="" class="object-cover">
+                        </span>
+                        <!--<span class="h-48 sm:h-1/6 ">
+                            <img src="/tailwind_tutorial/img/sandwiches-with-a-ham.jpg" alt="" class="object-cover">
+                        </span>
+                        <span class="h-48 sm:h-1/6 ">
+                            <img src="/tailwind_tutorial/img/sandwiches-with-a-ham.jpg" alt="" class="object-cover">
+                        </span>-->
+                        <span class="p-6 ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugiat, laborum nisi quisquam vero nobis distinctio modi animi voluptatem deserunt, alias cum. Corporis non esse beatae officiis eaque possimus quae!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam non perspiciatis voluptatum labore sapiente atque consectetur sint? Maiores aliquid assumenda reprehenderit sunt atque nihil velit natus, sint accusamus possimus quidem!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe veniam, dolore natus harum quam fugit consectetur aliquam quos consequatur? Nemo in rerum repellat ad minima fugit esse! Perspiciatis, totam vero?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste
+                        </span>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="mt-8">
+                    <div class="grid gap-3 mt-8 lg:grid-cols-4 md:grid-cols-2">
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/pancakes-with-banana-and-roasted-oats.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-center text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    35 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/gren-curry-medium-duck-breast-with-vegetables-and-rice.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    85 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/2.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    95 mins
+                                </span>
+                            </div>
+                        </div>  
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/chili-noodle-soup-with-fresh-vegetables-on-top.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    125 mins
+                                </span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <div class="grid gap-3 mt-8 lg:grid-cols-4 md:grid-cols-2">
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/pancakes-with-banana-and-roasted-oats.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-center text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    75 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/gren-curry-medium-duck-breast-with-vegetables-and-rice.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    75 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/2.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    35 mins
+                                </span>
+                            </div>
+                        </div>  
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/chili-noodle-soup-with-fresh-vegetables-on-top.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    55 mins
+                                </span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <div class="grid gap-3 mt-8 lg:grid-cols-4 md:grid-cols-2">
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/pancakes-with-banana-and-roasted-oats.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-center text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/gren-curry-medium-duck-breast-with-vegetables-and-rice.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/2.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>  
+                        <!--cards go here-->
+                        <div class="relative ml-1 overflow-hidden bg-white rounded shadow-lg w-4/4 sm:ml-0 hover:shadow-2xl sm:w-full ">
+                            <img src="/tailwind_tutorial/img/chili-noodle-soup-with-fresh-vegetables-on-top.jpg" alt="" class="object-cover w-full h-44 sm:h-48">
+                            <div class="p-4">
+                                <span class="font-bold">hot beans sauce</span>
+                                <span class="block text-sm text-gray-400">by mario</span>
+                            </div>
+                            <div>
+                                <span class="absolute w-24 h-8 p-2 ml-2 text-xs text-black uppercase bg-green-200 rounded-full top-3 text-bold ">
+                                    <img src="/tailwind_tutorial/img/icons/icons8_countdown_clock_50px.png" alt="" class="inline-block h-5"> 25 mins
+                                </span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="px-6">
+                    <div class="justify-center mt-10 bg-white rounded-md h-2/5 ">
+                        <img src="/tailwind_tutorial/img/top-image.jpg" alt="" class="object-cover ">
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum deserunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nihil maxime voluptatem id -->
+                    </div>
+                    <div class="col-span-1">
+                        dolorem. Nobis libero est pariatur, molestiae minima officia quo 
+                        eius velit assumenda alias maxime perspiciatis, provident expedita a qui!
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-12">
+                        <button class="h-8 text-xs tracking-wider text-red-700 uppercase transition ease-in transform bg-gray-300 rounded-full cursor-pointer duration-400 w-18 hover:bg-gray-400 hover:text-black hover:scale-x-110 hover:scale-y-105 hover:opacity-60 hover:shadow-md">
+                            load more..
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="container col-span-1 bg-gray-300 ">
+            <div class="grid-cols-2 px-1 py-24 md:fixed ">
+                <div class="col-span-1 p-4 text-xs text-gray-500 bg-gray-100 border-t shadow-xl ">
+                    side 1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora velit distinctio amet
+                    blanditiis, optio facere assumenda pariatur reiciendis unde voluptatibus doloribus, quidem culpa delectus
+                    earum? Non quisquam et possimus nulla.
+                </div>
+                <div class="col-span-1 p-4 text-xs text-gray-500 bg-gray-100 border-t shadow-xl md:mt-14 ">
+                    side2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora velit 
+                    distinctio amet blanditiis, optio facere assumenda pariatur reiciendis unde voluptatibus
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/dist/index.js"></script>
+</body>
+</html>
